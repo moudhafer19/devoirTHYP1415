@@ -1,8 +1,14 @@
 <div class="container">
 
       <div class="starter-template">
-        <h2> Etudiants Promo THYP1415 </h2>
-        <p class="lead"> 
+        <center><h2> Etudiants Promo THYP1415 </h2></center><br /><br />
+		<center><input name="absence" type="button" value="ajouter l'absence" />
+		<input name="presence" type="button" value="ajouter la présence" /></center><br />
+       <p class="lead"> 
+	   
+	   <center><table width="50%" border ="1" cellspacing="1" cellpadding="1"><tr><td><br />
+		
+	<center><div class="container">
         <?php
         
         //charge le flux rss dans un objet PHP
@@ -15,6 +21,11 @@
            echo "<div class=organisation>";
                 echo "<img src='".$tof->enclosure["url"]."' class=photo alt='".$tof->title."' />";
                 echo "<div class =legend>".$tof->title."</div>";
-           echo "</div>";     
-        } ?>    
+          		echo "</div>"; 
+			
+        } ?>
+		<br />
+		</td><tr></table>
+	</div>	</center></center>	
+   
 					
